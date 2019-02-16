@@ -6,7 +6,28 @@ var cardFour = "king";
 console.log("User flipped " + cardOne);
 console.log("User flipped " + cardThree);
 */
-var cards= ["queen", "queen", "king","king"];
+//var cards= ["queen", "queen", "king","king"];
+var cards= [
+{rank :"queen",
+ suit: "hearts",
+ cardImage: "../images/queen-of-hearts.png"
+},
+{
+  rank :"queen",
+  suit: "diamonds",
+  cardImage: "../images/queen-of-diamonds.png"
+},
+{
+  rank :"king",
+  suit: "hearts",
+  cardImage: "../images/king-of-hearts.png"
+},
+{
+  rank :"king",
+  suit: "diamonds",
+  cardImage: "../images/king-of-diamonds.png"
+}
+];
 var cardsInPlay=[];
 function checkForMatch()
 {
@@ -25,7 +46,8 @@ function flipCard(cardId)
   //var cardTwo= cards[2]; //var
   //cardsInPlay.push(cardTwo); //push
   //console.log("User flipped " + cardTwo );
- cardsInPlay.push(cards[cardId]); //push
+
+ cardsInPlay.push(cards[cardId].rank); //push
   // if (cardsInPlay.length==2)
   // {
   //   if (cardsInPlay[0]===cardsInPlay[1])
@@ -38,7 +60,9 @@ function flipCard(cardId)
   //   }//end else
   // }//end big IF
 checkForMatch();
-  console.log(" User flipped " + cards[cardId]);
+  console.log(" User flipped " + cards[cardId].rank);
+  console.log(" User flipped " + cards[cardId].suit);
+  console.log(" User flipped " + cards[cardId].cardImage);
 }//end of fucntion
 flipCard(0);
 flipCard(2);
