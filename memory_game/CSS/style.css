@@ -83,6 +83,7 @@ footer{
   font-family: "Raleway", sans-serif;
   float: right;
 }
+
 .clearfix:after {
 visibility: hidden;
 display: block;
@@ -91,10 +92,12 @@ clear: both;
 height: 0;
 font-size: 0;
 }
+
 .name{
   color:#F15B31;
   font-weight: 700;
 }
+
 a:hover {
 border-bottom: 2px solid white;
 }
